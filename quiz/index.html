@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<title>Perca de peso</title>
+<title>Responda as Perguntas</title>
 <head>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="shortcut icon" href="favicon.jpg">
+<link rel="shortcut icon" href="favicon.png">
 <style>
     header {
       background:"headerbg2.png";
@@ -59,13 +59,13 @@
       border-radius: 10px;
       padding: 5px 10px;
       font-size: 30px;
-      background-color: #f7ce6a;
+      background-color: orange;
       outline: none;
       text-decoration: none;
       color: black;
     }
     .black h1 {
-      color: yellow;
+      color: orange;
     }
     .black p {
       font-size: 18px;
@@ -74,7 +74,36 @@
     .hide {
       display: none;
     }
+
+    a{
+        text-decoration: none;
+        background-color: none;
+        color: black;
+        font-size: 10px;
+        border: 1px solid blue
+        padding:3px 5px;
+    }
+
   </style>
+
+  <!-- Meta Pixel Code -->
+   <script>
+     !function(f,b,e,v,n,t,s)
+     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+     n.queue=[];t=b.createElement(e);t.async=!0;
+     t.src=v;s=b.getElementsByTagName(e)[0];
+     s.parentNode.insertBefore(t,s)}(window, document,'script',
+     'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2919482511696270');
+      fbq('track', 'Quiz');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2919482511696270&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
 </head>
 <body>
 
@@ -82,8 +111,8 @@
 <div class="black">
 <div id="primeira">
 <div class="question">
-<h1>Pergunta 1</h1>
-<p>Você realmente quer descobrir esse segredo?</p>
+<h1>Perguntinha 1</h1>
+<p>Você realmente quer descobrir esse ritual secreto?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="segunda()">SIM</button>
@@ -92,7 +121,7 @@
 </div>
 <div id="segunda" class="hide">
 <div class="question">
-<h1>Pergunta 2</h1>
+<h1>Perguntinha 2</h1>
 <p>Você promete não revelar para ninguém?</p>
 </div>
 <div class="answer">
@@ -102,8 +131,8 @@
 </div>
 <div id="terceira" class="hide">
 <div class="question">
-<h1>Pergunta 3</h1>
-<p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o fim?</p>
+<h1>Perguntinha 3</h1>
+<p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo.. Você pretende ver até o fim?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="redirect()">SIM</button>
@@ -111,8 +140,17 @@
 </div>
 </div>
 </div>
-<p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
+<p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Meta Platforms, Inc.</p>
 </div>
+
+</div>
+<p style="text-align: center; font-weight: bold; color: silver; font-size: 8px; padding: 0px 150px;"> AVISO LEGAL: Todas as dicas e conceitos apresentados aqui têm como objetivo apenas informar e educar. Este website foi disponibilizado com esse objetivo e não tem intenção nenhuma de servir como orientação médica, prescrição ou substituir diagnósticos de profissionais. Nenhuma informação desta página ou do e-book Receitas Protocolo Zero Barriga substitui uma consulta com seu médico, nutricionista ou um personal. Jamais faça nenhuma mudança na sua alimentação ou estilo de vida alimentar sem antes consultar seu médico ou profissional de saúde. É só ele quem poderá avaliar de perto a sua situação atual e decidir se você está apto ou não a essas alterações. Tenha em mente que os resultados aqui apresentados são de pessoas reais, mas não garante que você terá os mesmo resultados. Vai do organismo de cada pessoa e da determinação de ter resultados. Os proprietários deste Livro Digital não se responsabilizam por quaisquer danos ou lesões resultantes. Isto é por sua conta. Protocolo Zero Barriga - Todos os direitos reservados.</p>
+</div>
+
+</div>
+<p><a href="../termos.html">Termos |<a href="../privacidade.html"> Políticas</a></p>
+</div>
+
 <script>
     function segunda() {
       document.getElementById("primeira").classList.add("hide")
